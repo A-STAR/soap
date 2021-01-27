@@ -1,0 +1,13 @@
+<router-outlet></router-outlet>
+
+<nav>
+  <a *ngFor="let item of (data$ | async)?.navigation">
+    <figure>
+      <div>
+        <img [src]="item.image">
+      </div>
+
+      <figcaption>{{ item.name }}</figcaption>
+    </figure>
+  </a>
+</nav>
