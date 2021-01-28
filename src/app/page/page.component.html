@@ -1,0 +1,7 @@
+<figure>
+  <div>
+    <img [src]="(data$ | async)?.image">
+  </div>
+
+  <figcaption>{{ (data$ | async)?.name }}</figcaption>
+</figure>

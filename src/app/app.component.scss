@@ -19,6 +19,10 @@ nav {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 
+    &.active {
+      background: linear-gradient(#F5A96C, #FDE588);
+    }
+
     figure {
       display: flex;
       flex-direction: column;

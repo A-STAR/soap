@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
 
 <nav>
-  <a *ngFor="let item of (data$ | async)?.navigation">
+  <a routerLinkActive="active" [routerLink]="item.name | lowercase" *ngFor="let item of (data$ | async)?.navigation">
     <figure>
       <div>
         <img [src]="item.image">
